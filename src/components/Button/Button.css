@@ -1,0 +1,14 @@
+.Button {
+    border-radius: var(--border-radius-buttons);
+    padding: 8px 16px;
+    background-color: var(--primary-dark-color);
+    border: 1px solid var(--primary-light-color);
+    color: var(--primary-light-color);
+    transition: all 0.5s;
+}
+
+.Button:hover {
+    background-color: var(--primary-light-color);
+    border: 1px solid var(--primary-dark-color);
+    color: var(--primary-dark-color);
+}
