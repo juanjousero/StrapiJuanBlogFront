@@ -1,0 +1,28 @@
+.Hero {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    background-size: cover;
+    background-position: center;
+    padding: 48px 0px;
+}
+
+.Background-clear {
+    color: var(--primary-dark-color);
+}
+
+.Background-dark {
+    color: var(--primary-light-color);
+}
+
+.Hero-text-leftDown {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.Hero-text-center {
+    justify-content: center;
+    align-items: center;
+}
