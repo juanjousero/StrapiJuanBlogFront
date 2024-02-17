@@ -1,0 +1,9 @@
+.SearchBar {
+    input {
+        padding: 8px;
+        border-radius: var(--border-radius-buttons);
+        border: none;
+        background-color: var(--primary-dark-color);
+        color: var(--total-white);
+    }
+}
