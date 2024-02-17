@@ -1,19 +1,27 @@
 .Header {
+    position: sticky;
+    top: 0;
     min-height: 70px;
     width: 100%;
     background: transparent;
-    border: 1px solid red;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 32px 0;
+    z-index: 99;
 
     & .Navigation {
         display: flex;
-        gap: 16px;
+        gap: 32px;
 
         & li {
             list-style-type: none;
         }
+    }
+}
+
+.Navigation {
+    .Navigation-link {
+        font-size: 20px;
     }
 }

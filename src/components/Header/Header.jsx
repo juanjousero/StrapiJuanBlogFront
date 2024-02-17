@@ -28,7 +28,9 @@ export const Header = () => (
         <nav className="Navigation">
             {menuItems.map(item => (
                 <li key={item.key}>
-                    <Link to={`/${item.key}`}>{item.title}</Link>
+                    <Link to={`/${item.key}`} className="Navigation-link">
+                        {item.title}
+                    </Link>
                 </li>
             ))}
         </nav>
