@@ -24,8 +24,6 @@ export const Hero = ({
         center: 'Hero-text-center',
     };
 
-    console.log({ buttonText });
-
     return (
         <section
             className="Hero"
