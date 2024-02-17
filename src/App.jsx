@@ -1,4 +1,5 @@
 import { Hero } from './components/Hero/Hero';
+import { Posts } from './components/Posts/Posts';
 
 import './App.css';
 
@@ -14,6 +15,7 @@ export function App() {
                 buttonText="Empieza a planear tu viaje"
                 onClickButton={() => console.log('Clicked')}
             />
+            <Posts />
         </main>
     );
 }

@@ -1,0 +1,24 @@
+.Post {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .Post-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .Post-container__note {
+            color: var(--note-text);
+        }
+    }
+}
