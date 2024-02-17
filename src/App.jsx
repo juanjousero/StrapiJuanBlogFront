@@ -9,7 +9,7 @@ export function App() {
             <Hero
                 title="INSPIRACIÓN PARA VIAJAR POR GENTE DE VERDAD"
                 description="Viaja inteligente, viaja simple"
-                backgroundImage="/src/assets/HomeHero.webp"
+                backgroundImage="./src/assets/HomeHero.webp"
                 backgroundType="clear"
                 textPlacement="center"
                 buttonText="Empieza a planear tu viaje"
