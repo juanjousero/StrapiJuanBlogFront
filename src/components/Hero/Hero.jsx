@@ -24,6 +24,8 @@ export const Hero = ({
         center: 'Hero-text-center',
     };
 
+    console.log({ buttonText });
+
     return (
         <section
             className="Hero"
@@ -35,8 +37,10 @@ export const Hero = ({
             <div
                 className={`Hero-container ${possibleBackgroundTypes[backgroundType]} ${possibleTextPlacements[textPlacement]} screen__wrapper`}
             >
-                <h1>{title}</h1>
-                {description && <h2>{description}</h2>}
+                <div className="Hero-container__text">
+                    <h1>{title}</h1>
+                    {description && <h3>{description}</h3>}
+                </div>
                 {buttonText && <Button onClick={onClickButton}>{buttonText}</Button>}
                 {heroFooter && <HeroFooter />}
             </div>
