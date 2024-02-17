@@ -10,48 +10,46 @@ import './index.css';
 import { Layout } from './components/Layout/Layout.jsx';
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: (
-      <Layout>
-        <App />
-      </Layout>
-    ),
-  },
-  {
-    path: 'travel',
-    element: (
-      <Layout>
-        <TravelPage />
-      </Layout>
-    ),
-  },
-  {
-    path: 'retail',
-    element: (
-      <Layout>
-        <RetailPage />
-      </Layout>
-    ),
-  },
-  {
-    path: 'investment',
-    element: (
-      <Layout>
-        <InvestmentPage />
-      </Layout>
-    ),
-  },
-  {
-    path: 'aboutUs',
-    element: (
-      <Layout>
-        <AboutUsPage />
-      </Layout>
-    ),
-  },
+    {
+        path: '/',
+        element: (
+            <Layout>
+                <App />
+            </Layout>
+        ),
+    },
+    {
+        path: 'travel',
+        element: (
+            <Layout>
+                <TravelPage />
+            </Layout>
+        ),
+    },
+    {
+        path: 'retail',
+        element: (
+            <Layout>
+                <RetailPage />
+            </Layout>
+        ),
+    },
+    {
+        path: 'investment',
+        element: (
+            <Layout>
+                <InvestmentPage />
+            </Layout>
+        ),
+    },
+    {
+        path: 'aboutUs',
+        element: (
+            <Layout>
+                <AboutUsPage />
+            </Layout>
+        ),
+    },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
-);
+ReactDOM.createRoot(document.getElementById('root')).render(<RouterProvider router={router} />);
