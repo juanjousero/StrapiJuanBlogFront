@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SearchBar } from '../SearchBar/SearchBar';
 
@@ -22,18 +23,38 @@ const menuItems = [
     },
 ];
 
-export const Header = () => (
-    <header className="Header">
-        <img />
-        <nav className="Navigation">
-            {menuItems.map(item => (
-                <li key={item.key}>
-                    <Link to={`/${item.key}`} className="Navigation-link">
-                        {item.title}
-                    </Link>
-                </li>
-            ))}
-        </nav>
-        <SearchBar />
-    </header>
-);
+export const Header = () => {
+    const [headerClassname, setHeaderClassname] = useState('Header');
+
+    const handleOnManageHeaderBackground = () => {
+        const scrollY = window.scrollY;
+
+        if (scrollY > 50) {
+            setHeaderClassname('Header Header-black');
+            return;
+        }
+
+        setHeaderClassname('Header');
+        return;
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleOnManageHeaderBackground);
+    });
+
+    return (
+        <header className={headerClassname}>
+            <img />
+            <nav className="Navigation">
+                {menuItems.map(item => (
+                    <li key={item.key}>
+                        <Link to={`/${item.key}`} className="Navigation-link">
+                            {item.title}
+                        </Link>
+                    </li>
+                ))}
+            </nav>
+            <SearchBar />
+        </header>
+    );
+};
