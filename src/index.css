@@ -169,5 +169,6 @@ label {
 
 .screen__wrapper {
     max-width: var(--max-width);
+    width: 90%;
     margin: 0 auto;
 }
