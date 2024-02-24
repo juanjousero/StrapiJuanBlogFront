@@ -8,6 +8,7 @@ import { App } from './App.jsx';
 
 import './index.css';
 import { Layout } from './components/Layout/Layout.jsx';
+import { PostDetail } from './pages/PostDetail/PostDetail.jsx';
 
 const router = createBrowserRouter([
     {
@@ -47,6 +48,14 @@ const router = createBrowserRouter([
         element: (
             <Layout>
                 <AboutUsPage />
+            </Layout>
+        ),
+    },
+    {
+        path: '/:id',
+        element: (
+            <Layout>
+                <PostDetail />
             </Layout>
         ),
     },
