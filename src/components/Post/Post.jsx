@@ -1,10 +1,11 @@
 import { Tags } from '../Tags/Tags';
+import parse from 'html-react-parser';
 import './Post.css';
 
 export const Post = ({ detail }) => {
     const { image, title, content: description, tags } = detail;
 
-    console.log({ detail });
+    const descriptionCleaned = console.log({ detail });
 
     return (
         <article className="Post">
@@ -16,8 +17,7 @@ export const Post = ({ detail }) => {
             )}
             <div className="Post-container">
                 <h3>{title}</h3>
-                <p className="Post-container__note">{description}</p>
-                {/* {description} */}
+                <div className="Post-container__note">{parse(description)}</div>
             </div>
         </article>
     );
