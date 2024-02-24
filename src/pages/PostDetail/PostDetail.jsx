@@ -3,6 +3,7 @@ import { useObtainPostById } from '../../hooks/useObtainPostById';
 import { Hero } from '../../components/Hero/Hero';
 
 import './PostDetail.css';
+import { defaultHeroBackground } from '../../utils/constants';
 
 export const PostDetail = () => {
     const [post, setPost] = useState();
@@ -16,16 +17,18 @@ export const PostDetail = () => {
 
     console.log({ postId, wordpressPost });
 
-    return (
-        <div className="PostDetail">
-            <section className="PostDetail-Hero">
-                <Hero
-                    backgroundImage={post.image.URL}
-                    title={post.title}
-                    backgroundType="dark"
-                    textPlacement="leftDown"
-                />
-            </section>
-        </div>
-    );
+    if (post) {
+        return (
+            <div className="PostDetail">
+                <section className="PostDetail-Hero">
+                    <Hero
+                        backgroundImage={post?.image?.URL ? post.image.URL : defaultHeroBackground}
+                        title={post.title}
+                        backgroundType="dark"
+                        textPlacement="leftDown"
+                    />
+                </section>
+            </div>
+        );
+    }
 };
