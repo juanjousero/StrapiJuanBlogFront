@@ -13,7 +13,7 @@ export const Posts = () => {
 
     useEffect(() => {
         if (wordpressPosts && wordpressPosts.length > 0) {
-            setPosts(wordpressPosts);
+            setPosts(wordpressPosts.slice(0, 10));
         }
     }, [wordpressPosts]);
 
