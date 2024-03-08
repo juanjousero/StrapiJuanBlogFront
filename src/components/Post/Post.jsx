@@ -1,7 +1,7 @@
 import { Tags } from '../Tags/Tags';
 import parse from 'html-react-parser';
-import './Post.css';
 import { Link } from 'react-router-dom';
+import './Post.css';
 
 export const Post = ({ detail }) => {
     const { id, image, title, content: description, tags } = detail;
