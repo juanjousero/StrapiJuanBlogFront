@@ -1,1 +1,3 @@
-export const TravelPage = () => <h1>Travel Page</h1>;
+import { MainPage } from '../../components/MainPage/MainPage';
+
+export const TravelPage = () => <MainPage category="viajes" />;

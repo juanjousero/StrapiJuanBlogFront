@@ -1,1 +1,3 @@
-export const RetailPage = () => <h1>Retail Page</h1>;
+import { MainPage } from '../../components/MainPage/MainPage';
+
+export const RetailPage = () => <MainPage category="retail" />;

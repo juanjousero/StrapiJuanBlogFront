@@ -1,1 +1,3 @@
-export const InvestmentPage = () => <h1>Investment page</h1>;
+import { MainPage } from '../../components/MainPage/MainPage';
+
+export const InvestmentPage = () => <MainPage category="finanzas" />;
