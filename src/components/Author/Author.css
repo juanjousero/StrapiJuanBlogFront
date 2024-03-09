@@ -1,0 +1,20 @@
+.Author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+
+    .AvatarName {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .Image {
+        max-width: 32px;
+    }
+
+    .Note-text {
+        color: var(--note-text);
+    }
+}
