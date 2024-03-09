@@ -7,6 +7,7 @@ export const useObtainPostsByCategory = ({ category }) => {
     const storagePosts = ({ posts }) => {
         return posts?.map(post => ({
             id: post.ID,
+            description: post.excerpt,
             author: post.author,
             postDate: post.date,
             title: post.title,

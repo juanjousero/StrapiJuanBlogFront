@@ -23,6 +23,10 @@
         flex-direction: column;
         gap: 24px;
 
+        .Post-container-title {
+            min-height: 108px;
+        }
+
         .Post-container__note {
             color: var(--note-text);
         }

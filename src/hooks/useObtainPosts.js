@@ -5,8 +5,10 @@ export const useObtainPosts = () => {
     const [posts, setPosts] = useState();
 
     const storagePosts = ({ posts }) => {
+        console.log({ posts });
         return posts?.map(post => ({
             id: post.ID,
+            description: post.excerpt,
             author: post.author,
             postDate: post.date,
             title: post.title,

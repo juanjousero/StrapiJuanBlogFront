@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useObtainPostById } from '../../hooks/useObtainPostById';
+import parse from 'html-react-parser';
 import { Hero } from '../../components/Hero/Hero';
 
 import './PostDetail.css';
@@ -27,6 +28,8 @@ export const PostDetail = () => {
                         backgroundType="dark"
                         textPlacement="leftDown"
                     />
+
+                    <div className="PostDetail-Description screen__wrapper">{parse(post.content)}</div>
                 </section>
             </div>
         );

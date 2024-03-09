@@ -5,7 +5,7 @@ import './Post.css';
 import { Author } from '../Author/Author';
 
 export const Post = ({ detail }) => {
-    const { id, image, title, content: description, tags, author, postDate } = detail;
+    const { id, image, title, tags, author, postDate, description } = detail;
 
     return (
         <article className="Post">
@@ -16,7 +16,7 @@ export const Post = ({ detail }) => {
                 </div>
             )}
             <div className="Post-container">
-                <h3>{title}</h3>
+                <h3 className="Post-container-title">{title}</h3>
                 <Author author={author} date={postDate} />
                 <div className="Post-container__note">{parse(description)}</div>
             </div>
