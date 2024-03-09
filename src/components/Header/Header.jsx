@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { SearchBar } from '../SearchBar/SearchBar';
 
 import './Header.css';
+import { Image } from '../Image/Image';
 
 const menuItems = [
     {
@@ -44,7 +45,7 @@ export const Header = () => {
 
     return (
         <header className={headerClassname}>
-            <img />
+            <Image src="./assets/react.svg" to={'/'} />
             <nav className="Navigation">
                 {menuItems.map(item => (
                     <li key={item.key}>
