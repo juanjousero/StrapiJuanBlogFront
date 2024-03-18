@@ -1,8 +1,8 @@
 :root {
     --max-width: 1124px;
-    --font-family: 'Roboto', sans-serif;
+    --font-family: 'Raleway', 'Roboto', sans-serif;
     --font-size: 16px;
-    --font-line-height: 24px;
+    --font-line-height: 22px;
     --font-weight-light: 300;
     --font-weight-medium: 400;
     --font-weight-semi: 600;
@@ -23,7 +23,7 @@
 @media screen and (min-width: 1050px) {
     :root {
         --font-size: 16px;
-        --font-line-height: 24px;
+        --font-line-height: 22px;
     }
 }
 
@@ -131,31 +131,31 @@ body {
 h1 {
     font-size: 64px;
     font-weight: var(--font-weight-bold);
-    line-height: 72px;
+    line-height: 88px;
 }
 
 h2 {
     font-size: 48px;
     font-weight: var(--font-weight-bold);
-    line-height: 48x;
+    line-height: 66px;
 }
 
 h3 {
     font-size: 32px;
     font-weight: var(--font-weight-semi);
-    line-height: 36px;
+    line-height: 44px;
 }
 
 h4 {
     font-size: 24px;
     font-weight: var(--font-weight-medium);
-    line-height: 24px;
+    line-height: 33px;
 }
 
 h5 {
     font-size: 20px;
     font-weight: var(--font-weight-light);
-    line-height: 20px;
+    line-height: 27.5px;
 }
 
 a {
